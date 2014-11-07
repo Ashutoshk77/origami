@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+	<style type="text/css">  /* inline css styles */
+
+	div#box {width:301px; height:301px; position:relative; perspective:500px; margin-left: 958px; top:-395px; z-index:2; border-color:#e2e2e6; border-style: solid; border-width: 1px; }
+	div#box img{ 
+	position:absolute; max-width:100%; transform:rotate3d(0,0,0,0deg);
+/*	-webkit-filter:drop-shadow(1px 1px 1px rgba(0,0,0,0.2)); */
+	outline: 1px solid transparent;
+/*	filter:drop-shadow(1px 1px 1px rgba(0,0,0,0.2)); */
+	transition-duration:1s; 
+	}
+
+	div#box img#right {transform-origin:top right; transition-delay:1s; opacity: 0;}
+	div#box:hover img#right { transform:rotate3d(0,1,0,179deg); transition-delay:0s; opacity: 1;}
+	
+	div#box img#bottom { transform-origin:center bottom; transition-delay:0.25s; opacity: 0.1; }
+	div#box:hover img#bottom { transform:rotate3d(1,0,0,-179deg); transition-delay:.25s; opacity: 1; }
+	
+	div#box img#left { transform-origin:left top; transition-delay:.5s; opacity: 0.1;}
+	div#box:hover img#left { transform:rotate3d(0,1,0,-180deg); transition-delay:.5s; opacity: 1;}
+	
+	div#box img#top{ transform-origin:top center; transition-delay:.75s; opacity: 0.1; }
+	div#box:hover img#top{ transform:rotate3d(1,0,0,179deg); transition-delay:.75s; opacity: 1; }
+	
+	
+	div#bg img{width:1421px; margin: -8px; z-index:1; opacity: .90}
+	</style>
+
+
+
+
+
+<body>
+  
+	<body>
+	
+		<div id=bg>
+		<img src=../origami/BG2.jpg alt="">
+		
+		</div>
+	
+		
+	<div id=box>
+	<img src=../origami/imagec1.png alt="">
+	<img id=top src=../origami/imaget1.png alt="">
+	<img id=left src=../origami/imagel1.png alt="">
+	<img id=bottom src=../origami/imageb1.png alt="">
+	<img id=right src=../origami/imager1.png alt="">
+	</div>
+
+
+
+
+</body>
+</html>
